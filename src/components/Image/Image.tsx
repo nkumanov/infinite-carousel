@@ -2,11 +2,12 @@ import styles from "./Image.module.scss";
 
 type ImageProps = {
   url: string;
+  id: string;
 };
-const Image = ({ url }: ImageProps) => {
+const Image = ({ id, url }: ImageProps) => {
   return (
     <div className={styles.imageContainer}>
-      <img src={url} alt={"Image still loading"} className={styles.image} />
+      <img loading="lazy" src={url} alt={id} className={styles.image} />
     </div>
   );
 };

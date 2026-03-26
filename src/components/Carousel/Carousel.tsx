@@ -14,7 +14,7 @@ const Carousel = () => {
   return (
     <section ref={imagesContainer} className={styles.container}>
       {data?.map((image) => (
-        <Image key={image.id} url={image.download_url} />
+        <Image key={image.id} id={image.id} url={image.download_url} />
       ))}
       {pendingReq.current && (
         <p className={styles.loadingCard}>

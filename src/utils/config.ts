@@ -1,1 +1,1 @@
-export const PREFETCH_PX = 1000;
+export const PREFETCH_PX = 1500;
