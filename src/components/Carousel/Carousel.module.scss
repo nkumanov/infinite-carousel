@@ -1,0 +1,15 @@
+.container {
+  height: 300px;
+  overflow-x: auto;
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.loadingCard {
+  min-width: 350px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
